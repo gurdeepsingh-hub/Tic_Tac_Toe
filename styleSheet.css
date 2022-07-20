@@ -1,0 +1,80 @@
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+}
+} */
+
+body{
+    background-color: powderblue;
+}
+.writing{
+    height: auto;
+    width: auto;
+    padding-inline: 20px;
+    margin: 20px;
+    border: 3px dotted black;
+}
+.center-horizontal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxes{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+}
+.boxesButton{
+    width: 102px;
+    height: 102px;
+    background-color: transparent;
+    border: none;
+}
+.space{
+    width: 80px;
+    height: 80px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-block: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid black;
+}
+.cross1{
+    width: 10px;
+    height: 50px;
+    margin: auto;
+    margin-block: 25px;
+    position: relative;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.cross2{
+    width: 10px;
+    height: 50px;
+    margin: auto;
+    margin-block: 25px;
+    position: relative;
+    background-color: black;
+    transform: rotate(135deg);
+}
+.cross{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.disabled{
+    opacity: 1 ;
+}
