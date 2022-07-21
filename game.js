@@ -54,6 +54,7 @@ function checkResult(num,fillValue){
                 click[6].disabled= true;
                 click[7].disabled= true;
                 click[8].disabled= true;
+                document.getElementById("Restart").hidden= false;  
                 
             }else{
                 document.getElementById("PlayerWin").innerHTML= 'Player 2 (cross) wins';
@@ -67,6 +68,7 @@ function checkResult(num,fillValue){
                 click[6].disabled= true;
                 click[7].disabled= true;
                 click[8].disabled= true;
+                document.getElementById("Restart").hidden= false;  
             }
         }else if(clicks >= 9){
             document.getElementById("PlayerWin").innerHTML= 'Match Tie';
@@ -76,6 +78,19 @@ function checkResult(num,fillValue){
         }
 }
 
+document.getElementById("Restart").onclick = ()=>{
+        for(let i=0;i<9;i++){
+                click[i].disabled= false;
+                document.getElementById('btn'+ i).classList.remove('circle','cross', 'center', 'disabled');
+                document.getElementById('btn'+ i).innerText = '';
+        }
+
+                document.getElementById("PlayerWin").innerHTML= '';
+                document.getElementById("PlayerWin").hidden= true;
+                document.getElementById("Restart").hidden= true;  
+                matrix = Array(8).fill(3);
+                clicks =0;
+}  
 
 const click = document.getElementsByClassName("boxesButton");
 click[0].onclick = ()=>{

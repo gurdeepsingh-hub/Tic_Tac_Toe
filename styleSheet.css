@@ -46,8 +46,8 @@ body{
     border: none;
 }
 .space{
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
 }
 .circle{
     width: 50px;
@@ -84,4 +84,18 @@ body{
 
 .disabled{
     opacity: 1 ;
+}
+.margin{
+    margin-top: 0px;
+    height: 75px;
+}
+.restart{
+    background-color: rgb(149, 219, 229);
+    border-color: rgb(102, 175, 187);
+    padding: 10px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: auto;
+    border-radius: 5px;
 }
